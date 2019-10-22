@@ -1,12 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="./src/lib/bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="./src/css/index.css"/>
+  <script src="./src/lib/jquery/jquery.min.js"></script>
+  <script src="./src/lib/bootstrap/js/bootstrap.min.js"></script>
   <title>Document</title>
 </head>
 <body>
-  <h1>你好git</h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">studyls.top</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active mr-4">
+        <a class="nav-link" href="http://studyls.top"
+        >首页<span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">文章文档</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">关于我</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">前端导航</a>
+      </li>
+      <li class="nav-item mr-4">
+        <a class="nav-link" href="#">前端资料</a>
+      </li>
+      <!-- <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+        >
+          更多
+        </a>
+        <div class="dropdown-menu bg-primary">
+          <a class="dropdown-item text-white" href="#">Action</a>
+          <a class="dropdown-item text-white" href="#">Another action</a>
+          <a class="dropdown-item text-white" href="#">Something else here</a>
+        </div>
+      </li> -->
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form> -->
+  </div>
+</nav>
+<div class="container mt-4">
+  <!-- 左右 -->
+  <div class="main d-md-flex">
+    <div class="left">
+      <!-- 博客介绍 -->
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title text-center m-0 p-0">博客介绍</h5>
+        </div>
+        <div class="card-body">
+          <!-- <h6 class="card-subtitle mb-2 text-muted">总结对前端知识基本</h6> -->
+          <p class="card-text">
+            这是一个人博客，主要记录和总结前端工作中常用的知识。
+          </p>
+          <!-- <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="card">
+        <div class="card-header">
+          <h4 class=" text-center m-0 p-0">vue框架</h4>
+          <h6 class="text-right">2019年10月11日</h6>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">前言 <a class="card-link float-right" href="https://cn.vuejs.org/">vue 官方</a></h5>
+          <p class="card-text">
+            Vue 是基于 MVVM 设计模式的渐进式的前端 js 框架 <br>
+            渐进式: 可以有选择的逐步使用框架中的组件,可以配合其他组件 js 库使用; 全家桶: 必须全盘使用所有组件 <br>
+            前端 js 框架，不需要使用 nodejs 但是需要使用到中的 babel 编译 ex6 中的浏览器不认识的语音，<br>
+            侧重于以数据操作为主的前端项目开发
+          </p>
+          <hr>
+          <h5 class="card-title">vue框架 对比 jquery 原生 dom</h5>
+          <ul class="list-unstyled p-0">
+            <li><p class="card-text">原生 dom 优点 不用导入任何的框架 插件，跨平台好，在操作 dom 时相对麻烦，</p></li>
+            <li><p class="card-text">jquery 中，相对于 原生 dom 更加方便，对 dom 的每一个 api 进行了简化，但是任然需操作到 dom</p></li>
+            <li><p class="card-text">框架 优点 彻底简化了开发的步骤，基本上不需要操作 dom， 这种优化，需要转变之前的观念...</p></li>
+          </ul>
+          <a href="./post/vue.html" class="card-link">查看详细</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  $(function ($) {
+    $(window).on('load', () => {
+      // 获取需要做动画的
+      $('.main .right, .main .left').css('transform', 'none')
+    })
+  })
+</script>
 </body>
 </html>
