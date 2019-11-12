@@ -2,16 +2,6 @@
 justify-content: space-between;
 overflow: hidden;
 }
-.main  .left,
-.main .right {
-  transform: translateX(-100px);
-  transition: all 1s;
-}
-
-.main .right{
-  transform: translateX(100px);
-}
-
 /*通过媒体查询*/
 @media screen and (min-width: 992px){
   .main  .left{
